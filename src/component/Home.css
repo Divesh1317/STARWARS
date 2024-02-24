@@ -1,0 +1,43 @@
+.video-bg {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    z-index: -1 !important;
+}
+@font-face {
+    font-family: 'StarJediOutline';
+    src: local('StarJediOutline'), url('./Font.ttf') format('ttf');
+    font-weight: 400;
+    /* Adjust font weight as needed */
+    font-style: normal;
+    /* Adjust font style as needed */
+}
+
+.write {
+    font-family: 'StarJediOutline', serif !important;
+    font-size: 4vw !important;
+    height: 60vh !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    color: #ffe919 !important;
+    overflow: hidden !important;
+    white-space: wrap !important;
+    margin: 0 auto !important;
+    animation:
+        typing 3s steps(100, end) !important;
+    z-index: 1 !important;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
